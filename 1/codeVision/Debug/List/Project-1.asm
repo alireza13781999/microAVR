@@ -1224,11 +1224,11 @@ _timer0_ovf_isr:
 	ADIW R30,1
 	ST   -X,R31
 	ST   -X,R30
-; 0000 0021     if (time_count == 333)
+; 0000 0021     if (time_count == 3333)
 	LDS  R26,_time_count_G000
 	LDS  R27,_time_count_G000+1
-	CPI  R26,LOW(0x14D)
-	LDI  R30,HIGH(0x14D)
+	CPI  R26,LOW(0xD05)
+	LDI  R30,HIGH(0xD05)
 	CPC  R27,R30
 	BRNE _0x3
 ; 0000 0022   {

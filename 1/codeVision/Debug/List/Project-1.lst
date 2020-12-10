@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.30  C:\cvavr\BIN\Projects\Project-1\Debug\List\Project-1.asm Thu Dec 10 21:33:46 2020
+AVRASM ver. 2.1.30  D:\My Files\UNI\Az micro\1\codeVision\Debug\List\Project-1.asm Thu Dec 10 22:51:57 2020
 
                  
                  
@@ -1228,11 +1228,11 @@ AVRASM ver. 2.1.30  C:\cvavr\BIN\Projects\Project-1\Debug\List\Project-1.asm Thu
 000051 9631      	ADIW R30,1
 000052 93fe      	ST   -X,R31
 000053 93ee      	ST   -X,R30
-                 ; 0000 0021     if (time_count == 333)
+                 ; 0000 0021     if (time_count == 3333)
 000054 91a0 0160 	LDS  R26,_time_count_G000
 000056 91b0 0161 	LDS  R27,_time_count_G000+1
-000058 34ad      	CPI  R26,LOW(0x14D)
-000059 e0e1      	LDI  R30,HIGH(0x14D)
+000058 30a5      	CPI  R26,LOW(0xD05)
+000059 e0ed      	LDI  R30,HIGH(0xD05)
 00005a 07be      	CPC  R27,R30
 00005b f471      	BRNE _0x3
                  ; 0000 0022   {

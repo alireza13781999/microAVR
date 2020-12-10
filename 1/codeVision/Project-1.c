@@ -30,7 +30,7 @@ interrupt [TIM0_OVF] void timer0_ovf_isr(void)
 {
     TCNT0 = 31; 
     ++time_count; 
-    if (time_count == 333)
+    if (time_count == 3333)
   {
         PORTC.0 = (PORTC.0 ^ 1); 
         time_count = 0; 
