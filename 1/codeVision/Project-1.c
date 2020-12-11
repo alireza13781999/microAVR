@@ -25,7 +25,8 @@ Data Stack size         : 256
 
 static unsigned int time_count;
 
-//interrupt for blinking 0.5 sec
+// interrupt for blinking 0.5 sec
+// 12MHz/8 = 1500 kHz --> 1/1500 = 0.66 us --> 225*0.66= 150 --> 500/150 * 1000 = 3333  
 interrupt [TIM0_OVF] void timer0_ovf_isr(void) 
 {
     TCNT0 = 31; 
