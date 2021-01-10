@@ -1,0 +1,2 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"motor_part1_2.c" LINE:70
+timer0_ovf_isr DSTACK_USAGE:4 DSTACK_LEVEL:4 FILE:"motor_part1_2.c" LINE:38
